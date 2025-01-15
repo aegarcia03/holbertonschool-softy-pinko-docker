@@ -7,9 +7,6 @@ RUN apt-get update \
     apt-get install -y python3-dev && \
     apt-get install -y python3-pip
 
-# Remove the EXTERNALLY-MANAGED restriction
-RUN rm /usr/lib/python*/EXTERNALLY-MANAGED
-
 # Install Flask
 RUN pip3 install flask
 RUN pip3 install flask-cors
